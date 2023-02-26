@@ -14,7 +14,7 @@ npm install trn-rocket-league
 const { fetchProfile } = require('trn-rocket-league');
 
 const profile = await fetchProfile('PannH.', 'epic');
-// Returns: https://sourceb.in/HzZO9vQcBp
+// Returns: https://sourceb.in/Kix7Fpi6ay
 ```
 
 # 📖 Documentation
@@ -54,6 +54,7 @@ Profile {
             };
             matchesPlayed: number;
             winStreak: number;
+            loseStreak: number;
             mmr: number;
          };
          double: {...}; // same as above
@@ -70,4 +71,4 @@ Profile {
    }
 }
 ```
-Example: https://sourceb.in/HzZO9vQcBp
+Example: https://sourceb.in/Kix7Fpi6ay
