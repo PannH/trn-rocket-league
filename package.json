@@ -1,0 +1,32 @@
+{
+   "name": "trn-rocket-league",
+   "version": "1.0.0",
+   "description": "Track any Rocket League player's stats with the Tracker Network API.",
+   "main": "dist/index.js",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/PannH/trn-rocket-league.git"
+   },
+   "keywords": [
+      "rocketleague",
+      "rocket league",
+      "rl",
+      "trackernetwork",
+      "tracker network",
+      "trn",
+      "api",
+      "game",
+      "stats",
+      "statistics"
+   ],
+   "author": "PannH",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/PannH/trn-rocket-league/issues"
+   },
+   "homepage": "https://github.com/PannH/trn-rocket-league#readme",
+   "devDependencies": {
+      "@types/node": "^18.14.1",
+      "typescript": "^4.9.5"
+   }
+}
