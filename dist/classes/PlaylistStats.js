@@ -4,6 +4,7 @@ class PlaylistStats {
     rank;
     matchesPlayed;
     winStreak;
+    loseStreak;
     mmr;
     constructor(segmentData) {
         const tierData = segmentData.stats.tier;
@@ -20,7 +21,8 @@ class PlaylistStats {
             imageURL: tierData.metadata.iconUrl
         };
         this.matchesPlayed = segmentData.stats.matchesPlayed.value;
-        this.winStreak = segmentData.stats.winStreak.value;
+        this.winStreak = segmentData.stats.winStreak.metadata.type === 'win' ? segmentData.stats.winStreak.value : 0;
+        this.loseStreak = segmentData.stats.winStreak.metadata.type === 'loss' ? segmentData.stats.winStreak.value : 0;
         this.mmr = segmentData.stats.rating.value;
     }
 }
