@@ -1,2 +1,4 @@
 import { fetchProfile } from './functions';
-export { fetchProfile };
+import type { Platform } from './types';
+import type { Profile } from './classes';
+export { fetchProfile, Platform, Profile };
