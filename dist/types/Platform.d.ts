@@ -1,1 +1,1 @@
-export type Platform = 'psn' | 'xbl' | 'steam' | 'epic';
+export type Platform = 'psn' | 'xbl' | 'steam' | 'epic' | 'switch';

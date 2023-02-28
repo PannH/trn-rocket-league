@@ -7,7 +7,7 @@ const classes_1 = require("../classes");
  */
 async function fetchProfile(username, platform) {
     return new Promise((resolve, reject) => {
-        const AVAILABLE_PLATFORMS = ['epic', 'psn', 'steam', 'xbl'];
+        const AVAILABLE_PLATFORMS = ['epic', 'psn', 'steam', 'xbl', 'switch'];
         if (!AVAILABLE_PLATFORMS.includes(platform))
             return reject(new TypeError(`The platform must be one of: ${AVAILABLE_PLATFORMS.join(', ')}`));
         const PROFILE_API_BASE_URL = 'https://api.tracker.gg/api/v2/rocket-league/standard/profile';
