@@ -1,6 +1,6 @@
 {
    "name": "trn-rocket-league",
-   "version": "1.3.2",
+   "version": "1.3.3",
    "description": "Track any Rocket League player's stats with the Tracker Network API.",
    "main": "dist/index.js",
    "repository": {
