@@ -21,7 +21,7 @@ const profile = await fetchProfile('PannH.', 'epic');
 The `fetchProfile()` function returns an instance of `Profile` which can be represented as :
 ```js
 Profile {
-   platform: 'psn' | 'xbl' | 'steam' | 'epic';
+   platform: 'psn' | 'xbl' | 'steam' | 'epic' | 'switch';
    username: string;
    avatarURL: string | null;
    countryCode: string;
