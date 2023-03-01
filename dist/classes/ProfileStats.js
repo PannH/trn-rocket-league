@@ -24,7 +24,7 @@ class ProfileStats {
         this.ranked = {
             duel: duelStats ? new _1.PlaylistStats(duelStats) : undefined,
             double: doubleStats ? new _1.PlaylistStats(doubleStats) : undefined,
-            standard: duelStats ? new _1.PlaylistStats(standardStats) : undefined
+            standard: standardStats ? new _1.PlaylistStats(standardStats) : undefined
         };
         const dropshotStats = data.segments.find((segment) => segment.metadata.name === 'Dropshot');
         const hoopsStats = data.segments.find((segment) => segment.metadata.name === 'Hoops');
