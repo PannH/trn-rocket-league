@@ -1,2 +1,3 @@
 import fetchProfile from './fetchProfile';
-export { fetchProfile };
+import fetchSessions from './fetchSessions';
+export { fetchProfile, fetchSessions };
