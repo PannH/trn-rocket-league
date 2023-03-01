@@ -89,6 +89,7 @@ The `fetchSessions()` function returns an array of instances of `Session` which 
 ```js
 Session {
    matches: {
+      id: string;
       isGrouped: boolean;
       date: Date;
       playlist: string;
@@ -118,4 +119,4 @@ Session {
    }[]
 }
 ```
-Example: https://sourceb.in/FszOtGhHAv
+Example: https://sourceb.in/wcaesZzb4P
