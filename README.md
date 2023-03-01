@@ -3,6 +3,9 @@
 # 🚗 TRN Rocket League
 > `trn-rocket-league` is an easy-to-use and typed library that allows you to fetch data from a Rocket League profile.
 
+# ☎️ Support
+> You need some help? Contact me: [linktr.ee/pannh](https://linktr.ee/pannh).
+
 # 🔰 Getting Started
 1. Installation
 ```bash
