@@ -9,12 +9,20 @@
 npm install trn-rocket-league
 ```
 
-2. Import it and fetch a profile
+2. Fetch a profile
 ```js
 const { fetchProfile } = require('trn-rocket-league');
 
 const profile = await fetchProfile('PannH.', 'epic');
-// Returns: https://sourceb.in/Kix7Fpi6ay
+// Returns a Profile instance (see documentation)
+```
+
+3. Fetch sessions
+```js
+const { fetchSessions } = require('trn-rocket-league');
+
+const sessions = await fetchSessions('PannH.', 'epic');
+// Returns an array of Session instances (see documentation)
 ```
 
 # 📖 Documentation
@@ -72,3 +80,39 @@ Profile {
 }
 ```
 Example: https://sourceb.in/Kix7Fpi6ay
+
+---
+The `fetchSessions()` function returns an array of instances of `Session` which can be represented as :
+```js
+Session {
+   matches: {
+      isGrouped: boolean;
+      date: Date;
+      playlist: string;
+      stats: {
+         rank: {
+            tier: {
+               name: string;
+               index: number;
+            };
+            division: {
+               name: string;
+               index: number;
+            };
+            oldMMR: number;
+            newMMR: number;
+            mmrDelta: number;
+            imageURL: string;
+         };
+         saves: number;
+         assists: number;
+         goals: number;
+         matchesPlayed: number;
+         mvps: number;
+         shots: number;
+         wins: number;
+      }
+   }[]
+}
+```
+Example: https://sourceb.in/FszOtGhHAv
