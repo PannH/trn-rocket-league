@@ -11,7 +11,7 @@ async function fetchProfile(username, platform) {
         if (!AVAILABLE_PLATFORMS.includes(platform))
             return reject(new TypeError(`The platform must be one of: ${AVAILABLE_PLATFORMS.join(', ')}`));
         const PROFILE_API_BASE_URL = 'https://api.tracker.gg/api/v2/rocket-league/standard/profile';
-        (0, child_process_1.exec)(`curl --user-agent 'Chrome/79' --url ${PROFILE_API_BASE_URL}/${platform}/${username}`, (error, stdout, stderr) => {
+        (0, child_process_1.exec)(`curl --user-agent 'Chrome/79' --url ${PROFILE_API_BASE_URL}/${encodeURIComponent(platform)}/${encodeURIComponent(username)}`, (error, stdout, stderr) => {
             const response = JSON.parse(stdout);
             if (response?.errors && response?.errors[0]?.code === 'CollectorResultStatus::NotFound')
                 return reject(new Error(`No profile found for '${platform}/${username}'`));
