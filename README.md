@@ -49,6 +49,11 @@ Profile {
          saves: number;
          shots: number;
          wins: number;
+         seasonRank: {
+            name: string;
+            index: number;
+            imageURL: string;
+         }
       };
       ranked: {
          duel: {
@@ -82,7 +87,7 @@ Profile {
    }
 }
 ```
-Example: https://sourceb.in/Kix7Fpi6ay
+Example: https://sourceb.in/qBXXqD2cgi
 
 ---
 The `fetchSessions()` function returns an array of instances of `Session` which can be represented as :
