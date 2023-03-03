@@ -1,5 +1,5 @@
 export type SeasonRank = {
     name: string;
-    index: string;
+    index: number;
     imageURL: string;
 };
