@@ -16,7 +16,14 @@ class ProfileStats {
             mvps: overviewStats.mVPs.value,
             saves: overviewStats.saves.value,
             shots: overviewStats.shots.value,
-            wins: overviewStats.wins.value
+            wins: overviewStats.wins.value,
+            seasonRank: {
+                name: overviewStats.seasonRewardLevel.metadata.rankName === 'None'
+                    ? 'Unranked'
+                    : overviewStats.seasonRewardLevel.metadata.rankName,
+                index: overviewStats.seasonRewardLevel.value,
+                imageURL: overviewStats.seasonRewardLevel.metadata.iconUrl
+            }
         };
         const duelStats = data.segments.find((segment) => segment.metadata.name === 'Ranked Duel 1v1');
         const doubleStats = data.segments.find((segment) => segment.metadata.name === 'Ranked Doubles 2v2');

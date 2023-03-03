@@ -1,3 +1,4 @@
+import { SeasonRank } from './';
 export type OverviewStats = {
     assists: number;
     goals: number;
@@ -6,4 +7,5 @@ export type OverviewStats = {
     saves: number;
     shots: number;
     wins: number;
+    seasonRank: SeasonRank;
 };

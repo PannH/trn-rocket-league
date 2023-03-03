@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const child_process_1 = require("child_process");
 const classes_1 = require("../classes");
+/**
+ * Fetch the recent match sessions from a Rocket League profile
+ */
 async function fetchSessions(username, platform) {
     return new Promise((resolve, reject) => {
         const AVAILABLE_PLATFORMS = ['epic', 'psn', 'steam', 'xbl', 'switch'];

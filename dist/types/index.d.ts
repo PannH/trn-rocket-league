@@ -6,4 +6,5 @@ import { RankTier } from './RankTier';
 import { RankDivision } from './RankDivision';
 import { RankedStats } from './RankedStats';
 import { ExtraStats } from './ExtraStats';
-export { Platform, LinkedAccount, OverviewStats, Rank, RankTier, RankDivision, RankedStats, ExtraStats };
+import { SeasonRank } from './SeasonRank';
+export { Platform, LinkedAccount, OverviewStats, Rank, RankTier, RankDivision, RankedStats, ExtraStats, SeasonRank };
